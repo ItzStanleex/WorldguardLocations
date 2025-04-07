@@ -1,0 +1,8 @@
+
+name: WorldguardLocations
+version: '1.0.0'
+main: me.itzstanleex.worldguardlocations.WorldguardLocations
+api-version: '1.21'
+authors: [ItzStanleex]
+description: Plugin pro zobrazení WorldGuard regionů pomocí PlaceholderAPI
+depend: [WorldGuard, PlaceholderAPI]

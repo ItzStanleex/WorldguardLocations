@@ -1,0 +1,26 @@
+# WorldGuard Locations Plugin - Konfigurace
+# Autor: ItzStanleex
+# Verze: 1.0.0
+
+# Verze konfigurace - NEUPRAVOVAT
+config-version: 1
+
+# Výchozí text při absenci regionu
+default-location: "Divočina"
+
+# Konfigurace regionů
+# Formát:
+# regions:
+#   "ID_REGIONU":
+#     placeholder-name: "Zobrazované jméno"
+regions:
+  "Test":
+    placeholder-name: "Spawn portál"
+  "spawn":
+    placeholder-name: "Spawn"
+  "arena":
+    placeholder-name: "PvP Aréna"
+  "shop":
+    placeholder-name: "Obchodní čtvrť"
+  "mine":
+    placeholder-name: "Důl"
