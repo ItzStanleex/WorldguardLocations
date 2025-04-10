@@ -31,7 +31,7 @@ public class WorldguardLocations extends JavaPlugin implements Listener {
     private RegionQuery regionQuery;
     private YamlDocument config;
     private final Map<UUID, String> playerRegions = new ConcurrentHashMap<>();
-    private final RegionDetector regionDetector = new RegionDetector(this);
+    private  RegionDetector regionDetector;
     private final LocationPlaceholder placeholderExpansion = new LocationPlaceholder(this);
 
     @Override
@@ -45,6 +45,8 @@ public class WorldguardLocations extends JavaPlugin implements Listener {
 
         regionContainer = WorldGuard.getInstance().getPlatform().getRegionContainer();
         regionQuery = regionContainer.createQuery();
+
+        regionDetector = new RegionDetector(this);
 
         try {
             loadConfig();
